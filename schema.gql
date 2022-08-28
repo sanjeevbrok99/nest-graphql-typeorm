@@ -357,53 +357,53 @@ type WardStageProgressDto {
 type Query {
   user(id: Int!): UserDto
 
-  """Поиск пользователей по ФИО и пагинация"""
+  """User search by name and pagination"""
   userList(textFilter: String, paging: Int!, page: Int!): [UserDto!]
   usersFind(ids: Int, usernames: String): [UserDto!]
 
-  """Поиск статуса договора по id"""
+  """Search for contract status by id"""
   agreementStatus(id: Int!): AgreementStatusDto
 
-  """Поиск статуса договора по наименованию и пагинация"""
+  """Search for contract status by name and pagination"""
   agreementStatusList(textFilter: String, paging: Int!, page: Int!): [AgreementStatusDto!]
 
-  """Поиск договора по id"""
+  """Search for a contract by id"""
   agreement(id: Int!): AgreementDto
 
-  """Поиск договора по номеру и пагинация"""
+  """Contract search by number and pagination"""
   agreementList(textFilter: String, paging: Int!, page: Int!): [AgreementDto!]
 
-  """Поиск договоров по номерам (точное совпадение)"""
+  """Search contracts by numbers (exact match)"""
   agreementsNumbersFind(agreementNumber: String): [AgreementDto!]
 
-  """Поиск категории НиУ по id"""
+  """Search category NIU by id"""
   bonusCategory(id: Int!): BonusCategoryDto
 
-  """Поиск НиУ по наименованию и пагинация"""
+  """NIU search by name and pagination"""
   bonusCategoryList(textFilter: String, paging: Int!, page: Int!): [BonusCategoryDto!]
 
-  """Поиск начисления или удержания по id"""
+  """Search accrual or deduction by id"""
   bonus(id: Int!): BonusDto
 
-  """Поиск начисления или удержания по наименованию и пагинация"""
+  """Search accrual or retention by name and pagination"""
   bonusList(textFilter: String, paging: Int!, page: Int!): [BonusDto!]
 
-  """Поиск населённого пункта по id"""
+  """Search for a settlement by id"""
   city(id: Int!): CityDto
 
-  """Поиск населённого пункта по наименованию и пагинация"""
+  """Search for a settlement by name and pagination"""
   cityList(textFilter: String, paging: Int!, page: Int!): [CityDto!]
 
-  """Поиск категории клиента по id"""
+  """Search customer category by id"""
   customerCategory(id: Int!): CustomerCategoryDto
 
-  """Поиск категории клиента по наименованию и пагинация"""
+  """Search for a client category by name and pagination"""
   customerCategoryList(textFilter: String, paging: Int!, page: Int!): [CustomerCategoryDto!]
 
-  """Поиск населённого пункта по id"""
+  """Search for a settlement by id"""
   customer(id: Int!): CustomerDto
 
-  """Поиск населённого пункта по наименованию и пагинация"""
+  """Search for a settlement by name and pagination"""
   customerList(textFilter: String, paging: Int!, page: Int!): [CustomerDto!]
 
   """Поиск района по id"""

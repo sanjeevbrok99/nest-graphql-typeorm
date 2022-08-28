@@ -19,7 +19,7 @@ export class BonusResolver {
 
   @Query(() => BonusDto, {
     nullable: true,
-    description: 'Поиск начисления или удержания по id',
+    description: 'Search accrual or deduction by id',
   })
   async bonus(@Args() { id }: BonusArgsDto) {
     return await this.bonusService.bonus(id);
@@ -27,7 +27,7 @@ export class BonusResolver {
 
   @Query(() => [BonusDto], {
     nullable: true,
-    description: 'Поиск начисления или удержания по наименованию и пагинация',
+    description: 'description: Search for an accrual or deduction by name and pagination',
   })
   async bonusList(@Args() { textFilter, page, paging }: BonusListArgsDto) {
     return this.bonusService.bonusList(textFilter, page, paging);
