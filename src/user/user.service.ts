@@ -40,7 +40,7 @@ export class UserService {
   }
 
   /**
-   * Поиск роли пользователя по id для модуля RolesGuard
+   *  Search for a user's role by id for the RolesGuard module
    * @param id {number}
    * @returns {User | undefined}
    */
@@ -57,7 +57,7 @@ export class UserService {
   }
 
   /**
-   * Поиск version записи по id для @OptimisticLocking
+   * Search for version entries by id for @OptimisticLocking
    * @param id {number}
    * @returns {User | undefined}
    */
